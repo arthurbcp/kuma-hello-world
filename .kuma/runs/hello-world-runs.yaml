@@ -1,7 +1,7 @@
 # Nome da run que será executada assim que o repositório for obtido através do comando `kuma-cli get`
 initial:
   # descrição da run
-  description: "Initial run"
+  description: "Create a simple 'Hello World' in Go"
   steps:
     - input:
         label: "What is your project package name?"
