@@ -3,13 +3,15 @@ initial:
   # descrição da run
   description: "Create a simple 'Hello World' in Go"
   steps:
-    - input:
-        label: "What is your project package name?"
-        out: packageName #github.com/arthurbcp/kuma-hello-world
+    - form:
+        fields:
+          - input:
+              label: "What is your project package name?"
+              out: packageName #github.com/arthurbcp/kuma-hello-world
 
-    - input:
-        label: "What message do you want to print?" #
-        out: msg #custoPrint
+          - input:
+              label: "What message do you want to print?" #
+              out: msg #custoPrint
 
       # log a message
     - log: "creating structure for {{.data.packageName}}" # creating structure for github.com/arthurbcp/kuma-hello-world
